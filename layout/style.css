@@ -1,0 +1,18 @@
+body {
+    background-color: whitesmoke;
+}
+
+.box {
+    min-height: 17vh;
+    max-width: 50vh;
+    background-color: gainsboro;
+    padding: 55px;
+    margin-top: 20px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.botao {
+    float: right;
+    justify-content: right;
+}
