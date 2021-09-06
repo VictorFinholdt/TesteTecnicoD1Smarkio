@@ -54,11 +54,6 @@ const ouvir = async (req, res) => {
             const audio = response.result;
             return textToSpeech.repairWavHeaderStream(audio);
         })
-        // .then(repairedFile => {
-        //     fs.writeFileSync(`./audio${comentario.id}.wav`, repairedFile);
-        //     console.log('audio.wav written with a corrected wav header');
-        //     return repairedFile
-        // })
         .catch(err => {
             res.status(400).json(err)
         });
@@ -70,11 +65,6 @@ const ouvir = async (req, res) => {
     res.setHeader('Content-Disposition', 'inline');
     res.write(buffer);
     res.end();
-
-
-
-
-    // return res.status(200).json("play");
 };
 
 
